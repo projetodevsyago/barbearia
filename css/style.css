@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    height: 95vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(41, 41, 41);
+    position: relative;
+}
+
+.nav-bar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.nav .nav-link{
+    text-decoration: none;
+    color: white;
+}
+
+.nav .nav-link:hover {   
+    border-bottom: solid 1.5px;
+    color: rgb(221, 55, 4);
+    transition: 1s;
+}
+
+.btn{
+    visibility: hidden;
+}
+
+
+.logo{
+    width: 3rem;
+    height: 3rem;
+}
+
+.container-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    height: 100%;
+    margin: 0 3rem;
+}
+
+.container-hero h1{
+    font-size: 3.5rem;
+}
+.container-hero p{
+    font-size: 1.5rem;
+}
+
+.container-hero .button{
+    margin-top: 2rem;
+}
+
+.button {
+        background-color: rgb(221, 55, 4); /* Cor de fundo */
+        border: none; /* Remove a borda */
+        padding: 1rem; /* Espaçamento interno */
+        text-align: center; /* Alinhamento do texto */
+        display: inline-block; /* Exibição em linha */
+        margin: 4px 2px; /* Margem */
+        cursor: pointer; /* Cursor em forma de mãozinha */
+        border-radius: 8px; /* Bordas arredondadas */
+    }
+    
+.button a{
+    color: white;
+    text-decoration: none; /* Remove a sublinha do texto */
+}
+    /* Efeito ao passar o mouse */
+.button:hover {
+        background-color: rgb(218, 92, 54); /* Cor de fundo ao passar o mouse */
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    padding: 3rem;
+}
+
+div h1{
+    text-align: center;
+}
+
+.sobre-barbearia{
+    width: 100%;
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-between;
+}
+
+.text-01{
+    margin-bottom: 5rem;
+}
+
+.text-02{
+    margin-bottom: 7rem;
+}
+
+.content-about {
+    margin: 0 0 0 0.7rem;
+}
+
+.servicos {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.servicos .btn{
+    background-color:rgb(218, 92, 54) ;
+    border: none;
+    cursor: not-allowed;
+}
+
+.servicos .btn:hover{
+    background-color:rgb(218, 92, 54) ;
+    cursor:  not-allowed;
+}
+
+.localizacao {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+}
+
+.localizacao iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(221, 55, 4);
+}
+
+@media (min-width: 350px) and (max-width: 750px){
+
+    *{
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+    }
+    .header{
+        width: 100%;
+    }
+    .container-hero h1{
+        font-size: 4rem;
+    }
+    .container-hero p{
+        font-size: 2rem;
+    }
+
+    .nav-bar .nav{
+        flex-direction: row-reverse;
+        visibility: hidden;
+    }
+    .btn{
+        visibility: visible;
+    }
+    .dropdown-menu{
+        visibility: visible;
+    }
+
+    .img-barbearia{
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    .sobre-barbearia{
+        width: 100%;
+        display: flex;
+        margin-top: 3rem;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .content-about {
+        text-align: center;
+        margin: 0 0 0 0.7rem;
+    }
+
+    .servicos {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .footer{
+        text-align: center;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 1080px){
+
+    *{
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+    }
+    .header{
+        width: 100%;
+    }
+    .container-hero h1{
+        font-size: 4rem;
+    }
+    .container-hero p{
+        font-size: 2rem;
+    }
+
+    main h1{
+        font-size: 2rem;
+    }
+
+    main h3{
+        font-size: 1.5rem;
+    }
+    
+    .nav-bar .nav{
+        flex-direction: row-reverse;
+        visibility: hidden;
+    }
+    .btn{
+        visibility: visible;
+    }
+    .dropdown-menu{
+        visibility: visible;
+    }
+
+    .img-barbearia{
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    .sobre-barbearia{
+        width: 100%;
+        display: flex;
+        margin-top: 3rem;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .content-about {
+        text-align: center;
+        margin: 0 0 0 0.7rem;
+    }
+
+    .servicos {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .footer{
+        text-align: center;
+    }
+}
+
+
